@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>wheel of fortune</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <div id="app">
+    <div id="arrow">
+      <svg viewBox="0 0 10 30" width="13">
+        <polygon points="5,0 10,10, 5,30, 0,10" fill="rgb(184, 3, 124)"></polygon>
+      </svg>
+    </div>
+    <div id="board">
+      <div class="stud" v-for="(prize, index) in prizes" :style="{transform: 'rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}"></div>
+      <div id="wheel">
+        <div class="piece" v-for="(prize, index) in prizes" :style="{transform: 'rotate(' + index * radius + 'deg)'}">
+          <div class="bg"></div>
+        </div>
+        <p v-for="(prize, index) in prizes" :style="{transform: 'translateX(-50%) rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}">{{ prize }}</p>
+      </div>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
