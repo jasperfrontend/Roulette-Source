@@ -52,9 +52,9 @@ window.APP = new Vue({
       'Non-English',
       'Number 1 hit song',
       'One hit wonder',
+      'On repeat',
       'Piano',
       'Rage / anger',
-      'Rap group',
       'Reggae / dub',
       'Remix',
       'Scary',
@@ -65,7 +65,6 @@ window.APP = new Vue({
       'So much bass',
       'Soul',
       'Sunny vacation vibes',
-      'The',
       'The 00s',
       'The 60s',
       'The 70s',
@@ -73,6 +72,7 @@ window.APP = new Vue({
       'The 90s',
       'The feels',
       'This year',
+      'Upbeat',
       'Underground',
       'Unexpected',
       'You decide',
@@ -102,8 +102,8 @@ window.APP = new Vue({
       console.log(rotations)
       console.log(index)
       console.log(this.prizes[index])
-      const randomAnswer2 = this.prizes[index]
-        
+      const randomAnswer = this.prizes[index]
+      // const randomAnswer = "Hip-hop / rap";
       const ws = new WebSocket(WEBSOCKET_URI);
       ws.addEventListener('open', function (event) {
           ws.send(JSON.stringify({
@@ -113,7 +113,7 @@ window.APP = new Vue({
               id: ACTION_ID,
             },
             args: {
-              rouletteAnswer: randomAnswer2
+              rouletteAnswer: randomAnswer
             }
         }));
       });
