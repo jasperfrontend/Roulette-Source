@@ -11,6 +11,7 @@ window.APP = new Vue({
       'A bit weird',
       'Alternative',
       'Annoying',
+      'Badass',
       'Band',
       'Best enjoyed after drinks',
       'Boyband / Girlband',
@@ -28,7 +29,6 @@ window.APP = new Vue({
       'Fell off',
       'Female singer',
       'Forever a hit',
-      'Not your language',
       'Friday after work',
       'Funky',
       'Game music',
@@ -51,6 +51,7 @@ window.APP = new Vue({
       'Music to fuck to',
       'My mom hates this',
       'Non-English',
+      'Not your language',
       'Number 1 hit song',
       'One hit wonder',
       'On repeat',
@@ -72,7 +73,6 @@ window.APP = new Vue({
       'The 90s',
       'The feels',
       'Upbeat',
-      'Underground',
       'Unexpected',
       'Violent',
       'You decide',
@@ -99,11 +99,11 @@ window.APP = new Vue({
       let index = Math.floor(Math.random() * this.max)
       let rotations = 360 * ((Math.ceil(Math.random() * 10)) + 20) + ((index - 1) / this.max * 360) + (Math.floor(Math.random() * (360/this.max)))
       let seconds = 3.7
-      console.log(rotations)
-      console.log(index)
-      console.log(this.prizes[index])
+      // console.log(rotations)
+      // console.log(index)
+      // console.log(this.prizes[index])
       const randomAnswer = this.prizes[index]
-      // const randomAnswer = "Hip-hop / rap";
+      // const randomAnswer = "Not your language";
       const ws = new WebSocket(WEBSOCKET_URI);
       ws.addEventListener('open', function (event) {
           ws.send(JSON.stringify({
