@@ -15,8 +15,8 @@ body {
 
 #app {
   position: relative;
-  height: 500px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
 }
 
 #arrow {
@@ -30,8 +30,8 @@ body {
 
 #board {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   padding: 13px;
   border-radius: 50%;
@@ -327,7 +327,7 @@ body {
   margin: 0;
   padding-top: 20px;
   line-height: 1em;
-  font-size: 11px;
+  font-size: 16px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   writing-mode: vertical-lr;
