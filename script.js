@@ -44,6 +44,7 @@ window.APP = new Vue({
       'House music',
       'I love you',
       'Instrumental',
+      'Jasper decides',
       'Late at night',
       'Let Gnoosic decide',
       'Live performance',
@@ -76,7 +77,6 @@ window.APP = new Vue({
       'The feels',
       'Their best song',
       'Upbeat',
-      'Unexpected',
       'You decide',
       'Your country'
     ],
