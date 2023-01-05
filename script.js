@@ -79,7 +79,6 @@ window.APP = new Vue({
       'The feels',
       'Their best song',
       'Upbeat',
-      'Xmas',
       'You decide',
       'Your country'
     ],
