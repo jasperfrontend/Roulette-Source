@@ -309,7 +309,7 @@ body {
   background-color: var(--six);
 }
 #wheel .piece .bg {
-  transform: rotate(calc(360deg/70));
+  transform: rotate(calc(360deg/73));
   position: absolute;
   left: -100%;
   width: 100%;
