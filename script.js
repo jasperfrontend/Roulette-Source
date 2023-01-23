@@ -15,6 +15,7 @@ window.APP = new Vue({
       'Badass',
       'Band',
       'Best enjoyed after drinks',
+      'Better live than recorded',
       'Black artist',
       'Boyband / Girlband',
       'Catchy',
@@ -56,7 +57,7 @@ window.APP = new Vue({
       'Movie music',
       'Music to fuck to',
       'My parent(s) hate this',
-      'My teenage angst time song', // That kind of song or band your parents hated and dissed you for listening but you did it anyway
+      'My teenage angst time song',
       'Never gets old',
       'Non-English',
       'Not your language',
@@ -79,7 +80,7 @@ window.APP = new Vue({
       'The 80s',
       'The 90s',
       'The feels',
-      'Theme of your biographical movie', // it's a theme of a movie that would be about you
+      'Theme of your biographical movie',
       'Their best song',
       'Upbeat',
       'Workout music',
@@ -106,14 +107,14 @@ window.APP = new Vue({
       
       let index = Math.floor(Math.random() * this.max)
       let rotations = 360 * ((Math.ceil(Math.random() * 10)) + 20) + ((index - 1) / this.max * 360) + (Math.floor(Math.random() * (360/this.max)))
-      let seconds = 3.7
+      let seconds = 3
       // console.log(rotations)
       // console.log(index)
       // console.log(this.prizes[index])
-      const randomAnswer = this.prizes[index]
       // const randomAnswer = "Not your language";
+      const randomAnswer = this.prizes[index];
       const ws = new WebSocket(WEBSOCKET_URI);
-      ws.addEventListener('open', function (event) {
+      ws.addEventListener('open', () => {
           ws.send(JSON.stringify({
             request: 'DoAction',
             id: 'DoAction',
@@ -125,7 +126,7 @@ window.APP = new Vue({
             }
         }));
       });
-      this.state.spin = true
+      this.state.spin = true;
       
       new TweenMax.fromTo('#board', seconds, {
         rotation: 0
@@ -137,7 +138,7 @@ window.APP = new Vue({
     },
     
     done () {
-      this.state.spin = false
+      this.state.spin = false;
     }
   }
 })

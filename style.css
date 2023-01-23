@@ -308,8 +308,17 @@ body {
 #wheel .piece:nth-child(76) .bg {
   background-color: var(--six);
 }
+#wheel .piece:nth-child(77) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(78) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(79) .bg {
+  background-color: var(--three);
+}
 #wheel .piece .bg {
-  transform: rotate(calc(360deg/73));
+  transform: rotate(calc(360deg/78));
   position: absolute;
   left: -100%;
   width: 100%;
