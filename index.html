@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>wheel of fortune</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
 
@@ -15,12 +14,12 @@
       </svg>
     </div>
     <div id="board">
-      <div class="stud" v-for="(prize, index) in prizes" :style="{transform: 'rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}"></div>
+      <div class="stud" v-for="(prize, index) in storedPrizes" :style="{transform: 'rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}"></div>
       <div id="wheel">
-        <div class="piece" v-for="(prize, index) in prizes" :style="{transform: 'rotate(' + index * radius + 'deg)'}">
-          <div class="bg"></div>
+        <div class="piece" v-for="(prize, index) in storedPrizes" :style="{transform: 'rotate(' + index * radius + 'deg)'}">
+          <div class="bg" :style="{transform: 'rotate(calc(360deg/' + index + '))'}"></div>
         </div>
-        <p v-for="(prize, index) in prizes" :style="{transform: 'translateX(-50%) rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}">{{ prize }}</p>
+        <p v-for="(prize, index) in storedPrizes" :style="{transform: 'translateX(-50%) rotate(' + ((index * radius) - (radius / 2)) + 'deg)'}">{{ prize }}</p>
       </div>
     </div>
   </div>
