@@ -318,6 +318,70 @@ body {
 #wheel .piece:nth-child(79) .bg {
   background-color: var(--three);
 }
+#wheel .piece:nth-child(80) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(81) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(82) .bg {
+  background-color: var(--six);
+}
+#wheel .piece:nth-child(83) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(84) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(85) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(86) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(87) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(88) .bg {
+  background-color: var(--six);
+}
+#wheel .piece:nth-child(89) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(90) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(91) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(92) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(93) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(94) .bg {
+  background-color: var(--six);
+}
+#wheel .piece:nth-child(95) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(96) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(97) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(98) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(99) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(100) .bg {
+  background-color: var(--six);
+}
+
 #wheel .piece .bg {
   transform: rotate(calc(360deg/88));
   position: absolute;

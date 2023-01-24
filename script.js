@@ -4,7 +4,6 @@ const WEBSOCKET_URI = 'ws://127.0.0.1:8080/';
 const ACTION_ID = '4f3ad2f9-99b6-4639-bd5e-22a2acb79fc1';
 const storedPrizes = JSON.parse(localStorage.getItem('wheelResults'));
 
-
 window.APP = new Vue({
   el: '#app',
   data: {
@@ -29,7 +28,7 @@ window.APP = new Vue({
       let index = Math.floor(Math.random() * this.max)
       let rotations = 360 * ((Math.ceil(Math.random() * 10)) + 20) + ((index - 1) / this.max * 360) + (Math.floor(Math.random() * (360/this.max)))
       let seconds = 3
-      console.log(this.prizes[index])
+      // console.log(this.prizes[index])
       // const randomAnswer = "Not your language";
       randomAnswer = this.prizes[index];
       const ws = new WebSocket(WEBSOCKET_URI);
