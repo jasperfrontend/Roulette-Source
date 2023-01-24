@@ -73,6 +73,7 @@ body {
   height: 100%;
   overflow: hidden;
   transform-origin: left center;
+  /* background-color: var(--five); */
 }
 #wheel .piece:nth-child(1) .bg {
   background-color: var(--one);
@@ -318,7 +319,7 @@ body {
   background-color: var(--three);
 }
 #wheel .piece .bg {
-  transform: rotate(calc(360deg/60));
+  transform: rotate(calc(360deg/80));
   position: absolute;
   left: -100%;
   width: 100%;

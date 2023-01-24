@@ -112,7 +112,7 @@ window.APP = new Vue({
       let index = Math.floor(Math.random() * this.max)
       let rotations = 360 * ((Math.ceil(Math.random() * 10)) + 20) + ((index - 1) / this.max * 360) + (Math.floor(Math.random() * (360/this.max)))
       let seconds = 3
-      // console.log(this.prizes[index])
+      console.log(this.prizes[index])
       // const randomAnswer = "Not your language";
       randomAnswer = this.prizes[index];
       const ws = new WebSocket(WEBSOCKET_URI);
@@ -137,13 +137,19 @@ window.APP = new Vue({
         ease: Sine.easeOut,
         onComplete: this.done
       })
-      const removePrize = storedPrizes.indexOf(randomAnswer);
-      if (removePrize > -1) {
-        storedPrizes.splice(removePrize, 1);
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
       }
-      localStorage.setItem('wheelResults', JSON.stringify(storedPrizes));
-    },
-    
+      const removeFunc = async () => {
+        const removePrize = storedPrizes.indexOf(randomAnswer);
+        await sleep(1000);
+        if (removePrize > -1) {
+          storedPrizes.splice(removePrize, 1);
+        }
+        localStorage.setItem('wheelResults', JSON.stringify(storedPrizes));
+      }
+      removeFunc();      
+    },    
     done () {
       this.state.spin = false;
     }
