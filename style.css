@@ -381,6 +381,42 @@ body {
 #wheel .piece:nth-child(100) .bg {
   background-color: var(--six);
 }
+#wheel .piece:nth-child(101) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(102) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(103) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(104) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(105) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(106) .bg {
+  background-color: var(--six);
+}
+#wheel .piece:nth-child(107) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(108) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(109) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(110) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(111) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(112) .bg {
+  background-color: var(--six);
+}
 
 #wheel .piece .bg {
   /* transform: rotate(calc(360deg/88)); */
