@@ -32,7 +32,7 @@ body {
   position: relative;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: #0f9fd3;
   padding: 13px;
 border-radius: 50%;
 
@@ -417,7 +417,42 @@ border-radius: 50%;
 #wheel .piece:nth-child(112) .bg {
   background-color: var(--six);
 }
-
+#wheel .piece:nth-child(113) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(114) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(115) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(116) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(117) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(118) .bg {
+  background-color: var(--six);
+}
+#wheel .piece:nth-child(119) .bg {
+  background-color: var(--one);
+}
+#wheel .piece:nth-child(120) .bg {
+  background-color: var(--two);
+}
+#wheel .piece:nth-child(121) .bg {
+  background-color: var(--three);
+}
+#wheel .piece:nth-child(122) .bg {
+  background-color: var(--four);
+}
+#wheel .piece:nth-child(123) .bg {
+  background-color: var(--five);
+}
+#wheel .piece:nth-child(124) .bg {
+  background-color: var(--six);
+}
 #wheel .piece .bg {
   /* transform: rotate(calc(360deg/88)); */
   position: absolute;
@@ -449,7 +484,7 @@ button {
   margin: 50px auto 0 auto;
   cursor: pointer;
   border: 0;
-  background-color: rgb(184, 3, 124);
+  background-color: #0f9fd3;
   color: #fff;
   font-size: 2em;
   border-radius: 10px;
@@ -459,10 +494,10 @@ button:disabled {
 }
 
 :root {
-  --one: #db7cba;
-  --two: #ed5d86;
-  --three: #ff7c72;
-  --four: #ffa360;
-  --five: #ffce5c;
-  --six: #f9f871;
+  --one: #7bc6e1;
+  --two: #FFFFDD;
+  --three: #D2DE32;
+  --four: #FFF78A;
+  --five: #FFE382;
+  --six: #C1F2B0;
 }
