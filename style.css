@@ -32,7 +32,7 @@ body {
   position: relative;
   width: 600px;
   height: 600px;
-  background: #0f9fd3;
+  background: #17181a;
   padding: 13px;
 border-radius: 50%;
 
@@ -494,10 +494,10 @@ button:disabled {
 }
 
 :root {
-  --one: #7bc6e1;
-  --two: #FFFFDD;
-  --three: #D2DE32;
-  --four: #FFF78A;
-  --five: #FFE382;
-  --six: #C1F2B0;
+  --one: #dc3724;
+  --two: #de695c;
+  --three: #d6928a;
+  --four: #ffffff;
+  --five: #8a8a91;
+  --six: #de695c;
 }
