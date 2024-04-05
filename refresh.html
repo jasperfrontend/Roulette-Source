@@ -11,61 +11,59 @@
     <p>Visit this page once to reload the wheel. <a href="./index.html">Back to the wheel</a></p>
     <script>
         const prizes = [
-            'Unplugged Gem',  // Hidden acoustic treasures
-            'Song on Repeat',  // The one you can't get enough of
-            'Genre-bending',  // Breaking the mold, pushing boundaries
-            'Global Rhythms',  // Musical influences from around the world
-            'Sunset Serenade',  // Perfect tunes for a beachy evening
-            'After-Hours Anthem',  // Keeping the party alive post-midnight
-            'Live Performance',  // Better experienced on stage
-            'Soulful Sounds',  // Celebrating the richness of soul music
-            'Classic Rocker',  // Icons of the classic rock era
-            'Body Groove',  // Songs that make you move from head to hips
-            'Visual Symphony',  // Mesmerizing videos that complement the music
-            'Acoustic Elegance',  // Unplugged with a touch of sophistication
-            'Musical Fusion',  // Collaborations that blend different styles
-            'Colorful Melodies',  // Songs with vibrant and vivid titles
-            'Revitalized Cover',  // Breathes new life into well-known hits
-            'Remixed Dancefloor',  // Remixes that set the dancefloor on fire
-            'Jungle Beats Journey',  // Exploring the wild side of drum and bass
-            'Cruising Soundtrack',  // Perfect tunes for a drive
-            'Electronic Odyssey',  // Navigating the vast landscape of electronic music
-            'Energetic Pace',  // Rapid beats without the expected artists
-            'Fresh Favorites',  // Current hits within the last year
-            'Vocal Harmony',  // Celebrating non-American female voices
-            'Weekend Uplift',  // Kicking off the weekend with a high note
-            'Motivational Beats',  // Songs that inspire and drive you
-            'Morning Serenity',  // Calm tunes with morning guitar solos
-            'Innovative Visuals',  // Breaking the norm with creative music videos
-            'Hidden Treasures',  // Songs that deserve more recognition
-            'Intense Rhythms',  // Pulsating beats at a minimum of 180 BPM
-            'Underground Flavors',  // Exploring lesser-known hip-hop gems
-            'Vacation Grooves',  // Beats for a holiday without cliches
-            'Club Atmosphere',  // No lyrics, just the rhythm for the dancefloor
-            'Melodic Journeys',  // Instrumentals without Robert Miles
-            'Late-Night Vibes',  // Exclusive club music for the nocturnal
-            'Sensual Beats',  // Captivating songs with both male and female presence
-            'Controversial Tracks',  // Music that might not align with parental tastes
-            'Worldly Harmony',  // Exploring non-English tunes
-            'Language Divergence',  // Music outside the English and German spectrum
-            'One-Hit Marvels',  // Celebrating those fleeting moments of fame
-            'Piano Uplift',  // Upbeat tunes accompanied by a piano
-            'Quirky Delights',  // Eccentric and fun songs without The Firm or Daft Punk
-            'Live Reggae Rhythms',  // Experiencing reggae and dub in a live setting
-            'Rock Revamped',  // Remixing rock songs in a unique way
-            'Sensual Grooves',  // Videos with both male and female allure
-            'Mellow Acapella',  // A soothing journey with acapella melodies
-            'Album Gem',  // A standout from your favorite album
-            'Redheads Unite',  // Celebrating the 2000-2010 era with redhead artists
-            'Psychedelic Exploration',  // Delving into the 60s psychedelic sounds
-            'Glamrock Decade',  // Glamorous rock hits spanning a decade
-            'Synthpop Vibes',  // Collaborative synthpop hits with both genders
-            'Smooth R&B Journey',  // A trip through the smooth R&B of the 90s
-            'Emotional Connection',  // Songs that evoke strong emotions
-            'Musical Immortality',  // Artists that left a mark despite not existing anymore
-            'Personal Choice',
-            'Homeland Harmony'   // Exploring the musical landscape of your country
-
+            'Acoustic',  //  Nothing from MTV unplugged  
+            'A current song you love',
+            'Ahead of its time',  //  Only 80's but no KLF
+            'African',  //   No Wes - No Toto - No Die Antwoord
+            'Beach vibes',  //  No Beach Boys - No Vengaboys
+            'Music to drink to',  // The video must have partying peepz in it  
+            'Better live than recorded',  // Live recording must be indoors
+            'Black artist',  // No rap / hip hop / R&B
+            'Booba',
+            'Body Part in the Title',  //    Only body parts between the head and hips
+            'Came for the looks - stayed for the song',  // Lead singer can't be blonde
+            'Chill',  // must have an acoustic guitar in it
+            'Collab',  //    Nothing pre 90's
+            'Colour in the Title',  // No blue, white or black
+            'Cover',  // Original must be a nr. 1 hitsong
+            'Dance remix',  //  Remix from a rap song  
+            'Drum and Bass',  //  Artist can't be Dutch
+            'Driving in a car',  //   No drive or driving in the title
+            'Electronic',  //   No house music
+            'Fast',  //  Fast lyrics but no Snow, no Busta, no Eminem
+            'First song that comes to mind',
+            'Female singer',  //  Non-American female, but no Adele
+            'Friday after work',  //  Must be after a terrible work week!
+            'Get shit done song',  // Releasedate between 1985 and 1995
+            'Good morning',  // Chill song with a guitar solo
+            'Great video',  //  Cartoon video but no Gorilazz
+            'Guilty pleasure',  //    Nothing between 1990 and 2005
+            'Hard beat',  // at least 180 BPM
+            'Hip-hop / rap',  //  nothing populair, stricktly underground
+            'Holidays',  //  No X-mas songs and no holiday in title
+            'House / Dance music',  // No lyrics
+            'Instrumental',  // No Robert Miles
+            'Late at night',  //  Strictly club music
+            'Music to fuck to',  //   No LL Cool J, no Prince
+            'My parent(s) hate this',  //    No dubstep ;)
+            'Non-English',  //  Nothing German or French
+            'Not your language',  //  No English or German
+            'One hit wonder',  // No Gotye, no Vanilla Ice, no O-Zone, no Eiffel 65
+            'Piano',  // Must be an uptempo song
+            'Quirky and fun',  // No The Firm - No Daft Punk
+            'Reggae / dub',  // Must be live
+            'Remix',  // Remix from a rock song
+            'Sexy',  //  Videoclip must have males and females in it
+            'Slow',  //  Must be an acapella song
+            '2000-2010',  // band must contain a redhead
+            '60s Rock',  //  No Beatles, Stones or CCR
+            '70s Glamrock',  // Must have had a hit a decade before or after
+            '80s Synthpop',  // Song must be sung by male and female
+            '90s R&B',  //   No one hit wonder
+            'The feels',  // Must be a collab
+            'Does not exist anymore',  //    But artist can't be dead
+            'You decide',
+            'Your country'   // Only English songs
         ];
         localStorage.setItem('wheelResults', JSON.stringify(prizes));
     </script>
