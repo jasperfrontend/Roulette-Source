@@ -11,61 +11,102 @@
     <p>Visit this page once to reload the wheel. <a href="./index.html">Back to the wheel</a></p>
     <script>
         const prizes = [
-            'Acoustic',  //  Nothing from MTV unplugged  
-            'A current song you love',
-            'Ahead of its time',  //  Only 80's but no KLF
-            'African',  //   No Wes - No Toto - No Die Antwoord
-            'Beach vibes',  //  No Beach Boys - No Vengaboys
-            'Music to drink to',  // The video must have partying peepz in it  
-            'Better live than recorded',  // Live recording must be indoors
-            'Black artist',  // No rap / hip hop / R&B
-            'Booba',
-            'Body Part in the Title',  //    Only body parts between the head and hips
-            'Came for the looks - stayed for the song',  // Lead singer can't be blonde
-            'Chill',  // must have an acoustic guitar in it
-            'Collab',  //    Nothing pre 90's
-            'Colour in the Title',  // No blue, white or black
-            'Cover',  // Original must be a nr. 1 hitsong
-            'Dance remix',  //  Remix from a rap song  
-            'Drum and Bass',  //  Artist can't be Dutch
-            'Driving in a car',  //   No drive or driving in the title
-            'Electronic',  //   No house music
-            'Fast',  //  Fast lyrics but no Snow, no Busta, no Eminem
-            'First song that comes to mind',
-            'Female singer',  //  Non-American female, but no Adele
-            'Friday after work',  //  Must be after a terrible work week!
-            'Get shit done song',  // Releasedate between 1985 and 1995
-            'Good morning',  // Chill song with a guitar solo
-            'Great video',  //  Cartoon video but no Gorilazz
-            'Guilty pleasure',  //    Nothing between 1990 and 2005
-            'Hard beat',  // at least 180 BPM
-            'Hip-hop / rap',  //  nothing populair, stricktly underground
-            'Holidays',  //  No X-mas songs and no holiday in title
-            'House / Dance music',  // No lyrics
-            'Instrumental',  // No Robert Miles
-            'Late at night',  //  Strictly club music
-            'Music to fuck to',  //   No LL Cool J, no Prince
-            'My parent(s) hate this',  //    No dubstep ;)
-            'Non-English',  //  Nothing German or French
-            'Not your language',  //  No English or German
-            'One hit wonder',  // No Gotye, no Vanilla Ice, no O-Zone, no Eiffel 65
-            'Piano',  // Must be an uptempo song
-            'Quirky and fun',  // No The Firm - No Daft Punk
-            'Reggae / dub',  // Must be live
-            'Remix',  // Remix from a rock song
-            'Sexy',  //  Videoclip must have males and females in it
-            'Slow',  //  Must be an acapella song
-            '2000-2010',  // band must contain a redhead
-            '60s Rock',  //  No Beatles, Stones or CCR
-            '70s Glamrock',  // Must have had a hit a decade before or after
-            '80s Synthpop',  // Song must be sung by male and female
-            '90s R&B',  //   No one hit wonder
-            'The feels',  // Must be a collab
-            'Does not exist anymore',  //    But artist can't be dead
-            'You decide',
-            'Your country'   // Only English songs
+            "United States",
+            "Jamaica",
+            "India",
+            "Belgium",
+            "Cuba",
+            "Ireland",
+            "Argentina",
+            "Mali",
+            "Congo",
+            "Spain",
+            "Italy",
+            "France",
+            "South Africa",
+            "Nigeria",
+            "Greece",
+            "Japan",
+            "Australia",
+            "Canada",
+            "Colombia",
+            "Senegal",
+            "Turkey",
+            "Scotland",
+            "Russia",
+            "Brazil",
+            "Sweden",
+            "Netherlands",
+            "Norway",
+            "Ghana",
+            "Trinidad and Tobago",
+            "Acoustic",
+            "A current song you love",
+            "Ahead of its time",
+            "African",
+            "Beach vibes",
+            "Music to drink to",
+            "Better live than recorded",
+            "Black artist",
+            "Booba",
+            "Body Part in the Title",
+            "Came for the looks - stayed for the song",
+            "Chill",
+            "Collab",
+            "Colour in the Title",
+            "Cover",
+            "Dance remix",
+            "Drum and Bass",
+            "Driving in a car",
+            "Electronic",
+            "Fast",
+            "First song that comes to mind",
+            "Female singer",
+            "Friday after work",
+            "Get shit done song",
+            "Good morning",
+            "Great video",
+            "Guilty pleasure",
+            "Hard beat",
+            "Hip-hop / rap",
+            "Holidays",
+            "House / Dance music",
+            "Instrumental",
+            "Late at night",
+            "Meme",
+            "Music to fuck to",
+            "My parent(s) hate this",
+            "Non-English",
+            "Not your language",
+            "One hit wonder",
+            "Piano",
+            "Quirky and fun",
+            "Reggae / dub",
+            "Remix",
+            "Sexy",
+            "Slow",
+            "2000-2010",
+            "60s Rock",
+            "70s Glamrock",
+            "80s Synthpop",
+            "90s R&B",
+            "The feels",
+            "Does not exist anymore",
+            "You decide",
+            "Your country"
         ];
-        localStorage.setItem('wheelResults', JSON.stringify(prizes));
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const randomizedPrizes = shuffleArray(prizes);
+        //console.log(randomizedPrizes);
+        localStorage.setItem('wheelResults', JSON.stringify(randomizedPrizes));
     </script>
 </body>
 </html>
