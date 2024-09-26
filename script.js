@@ -27,7 +27,7 @@ window.APP = new Vue({
       let randomAnswer = undefined;
       let index = Math.floor(Math.random() * this.max)
       let rotations = 360 * ((Math.ceil(Math.random() * 10)) + 20) + ((index - 1) / this.max * 360) + (Math.floor(Math.random() * (360/this.max)))
-      let seconds = 3
+      let seconds = 3;
       // console.log(this.prizes[index])
       // randomAnswer = "Test";
       randomAnswer = this.prizes[index];
