@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Wheel</title>
+</head>
+<body>
+    <h1 style="color: #fff;">Hello chat, I am just here to refresh the speen. Ignore me!</h1>
+    <script>
+        const prizes = [
+            "Halloween",
+            "Bats",
+            "Spiders",
+            "Scary",
+            "Dracula",
+            "Frankenstein",
+            "Nighttime",
+            "Blood",
+            "Mummies",
+            "Witches",
+            "Death",
+            "Monsters",
+            "Werewolf",
+            "Ghosts",
+            "Trick or Treat",
+            "Skeletons",
+            "Vampire",
+            "Zombies (no Cranberries)",
+            "Candles",
+            "Graveyard",
+            "Black Cats",
+            "Crows (no Black or Counting Crows)",
+            "Devil",
+            "Haunted House",
+            "Candy",
+            "Mystery",
+            "Pumpkins",
+            "Morticia",
+            "Costumes",
+            "Magic",
+            "Moonlight (no dancing by the moonlight)",
+            "Morbid",
+            "Evil",
+            "Scary Clowns",
+            "Coffin",
+            "Darkness",
+            "Demons",
+            "Grim Reaper",
+            "After Life",
+            "Creepy",
+            "Car in the clip (no rap video)",
+            "Acoustic (no MTV Unplugged at all)",
+            "Ambitious project",
+            "6am drugged out nightclub vibes",
+            "Nobody knows this song, but I like it",
+            "A song you currently love",
+            "Questionable at best",
+            "Spanish / Portugese / Latin",
+            "Go HARD",
+            "Cats", // thnx maka
+            "You last saved song",
+            "Beach vibes",
+            "Music to get absolutely shitfaced drunk on",
+            "Everybody loves tits",
+            "Everybody loves good booty",
+            "Talented and gorgeous",
+            "Bad artist, good song",
+            "A song dedicated to Jasper",
+            "Any fucking loud banger",
+            "Song from when you were growing up",
+            "Getting kicked out of class at primary school vibes",
+            "Telling your boss to go fuck himself vibes",
+            "1950s and older", // thanks GPU
+            "Driving in a car",
+            "The song that should play when you're being awesome in an online game",
+            "Annoy everyone on the bus with your bt speaker and this song",
+            "Electronic Music",
+            "Fast as fuck boiiii",
+            "The new generation can't appreciate this art",
+            "Stuck in traffic jam on Monday 6pm vibes",
+            "The best version of a song by anybody, anywhere",
+            "Mashup",
+            "That forgotten song",
+            "Female singer",
+            "Friday after work",
+            "Get-shit-done song",
+            "Coffee / tea time",
+            "This tune is fucking stoned man",
+            "This tune makes me think about somebody",
+            "House / Dance music",
+            "Oh shit, the robots are taking over!!",
+            "Music from / used in a movie",
+            "Music to organically reproduce to",
+            "My favourite decade of music in a song",
+            "Today 10 years ago !10y",
+            "One hit wonder !1hw",
+            "Reggae",
+            "Remix",
+            "Sunday Night Song",
+            "An alien visits you and requests to hear a song from earth",
+            "2000-now",
+            "The ol' 60s & 70s",
+            "Glamorous 80s",
+            "So incredibly 90s",
+            "The feels",
+            "Rent-free in my head",
+            "Recognisable intro", // thanks dutchfella
+            "Not heard of anymore",
+            "Not sure if male, female or lizard",
+            "You decide!"
+        ];
+
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const randomizedPrizes = shuffleArray(prizes);
+        //console.log(randomizedPrizes);
+        localStorage.setItem('wheelResults', JSON.stringify(randomizedPrizes));
+    </script>
+</body>
+</html>
