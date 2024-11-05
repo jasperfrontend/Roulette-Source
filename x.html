@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Wheel</title>
+</head>
+<body>
+    <h1 style="color: #fff;">Ho ho ho!!! Merry X-mas!</h1>
+    <script>
+        const prizes = [
+            "Car in the clip (no rap video)",
+            "Acoustic (no MTV Unplugged at all)",
+            "Ambitious project",
+            "6am drugged out nightclub vibes",
+            "Nobody knows this song, but I like it",
+            "A song you currently love",
+            "Questionable at best",
+            "Spanish / Portuguese / Latin",
+            "Go HARD",
+            "Cats", // thnx maka
+            "Nobody makes music like they do", // thanks Mylvan
+            "You last saved song",
+            "Summer vacation, laying on the beach vibes",
+            "Music to get absolutely shitfaced drunk on",
+            "A bad artist, but a good song",
+            "A song dedicated to Jasper",
+            "Any fucking loud-ass banger",
+            "Song from when you were growing up",
+            "Getting kicked out of class at primary school vibes",
+            "Telling your boss to go fuck himself vibes",
+            "1950s and older", // thanks GPU
+            "Driving in a car",
+            "The song that should play when you're being awesome in an online game",
+            "Annoy everyone on the bus with your bt speaker and this song",
+            "Electronic Music like you're on a festival mainstage",
+            "We're going fast as fuck boiiii! ",
+            "The new generation can't appreciate this art",
+            "Stuck in a traffic jam on Monday 6pm vibes",
+            "Mashup",
+            "That forgotten song",
+            "Female singer",
+            "Friday after work home alone no neighbours vibe",
+            "The theme for getting shit done",
+            "This tune is fucking stoned man",
+            "This tune makes me think about somebody",
+            "House / Dance / EDM music",
+            "Oh shit, the robots are taking over!!",
+            "Music from / used in a movie",
+            "Music to organically reproduce to",
+            "My favourite decade of music in a song",
+            "Today 10 years ago !10y",
+            "One hit wonder !1hw",
+            "Reggae or Dub. If you don't know what dub is, pick a reggae song",
+            "An even better remix of an already great song",
+            "Sunday Night last day of the weekend vibes song",
+            "An alien visits you and requests to hear a song from earth",
+            "2000-now",
+            "The ol' 60s & 70s",
+            "Glamorous 80s",
+            "So incredibly 90s",
+            "The feels",
+            "Rent-free in my head",
+            "Not heard of anymore",
+            "Not sure if male, female or lizard",
+            "You decide! Pick any song you like, disregard the category!",
+            // X-mas themed categories
+            "You're 14yr old and have to sit with your family during X-mas but you rather go upstairs and play this tune",
+            "The song that should play when your family finally ends up in a fight during X-mas",
+            "Your drunk uncle is spilling the beans again during turkey dinner",
+            "Help! The cat jumped into the X-mas tree again",
+            "You're 16, and your cousin is trying to brag about their new phone, but you just know yours is cooler. Cue the moment you casually whip it out",
+            "Your 5-year-old cousin loses it because Santa didn't bring them the exact shade of pink they wanted, so now they're having a meltdown",
+            "The whole family is in the car on the way to X-mas dinner with the fam, everybody is feelin good feelin fine and then this song comes on to top it all off",
+            "Waking up on X-mas morning and it actually snowed over night - and nobody has walked over the snow yet",
+            "The kids are finally in bed and now it's adult playlist time",
+            "Because sometimes even Christmas isn't enough to hold it all together. Let it all out with this tune!",
+            "For when dinner becomes a high-stakes heist, with one determined dog and a roast on the line",
+            "Everyone's asleep but you're still hungry so you're sneaking to the kitchen for one last slice of pie. What's the soundtrack for this stealth mission?",
+            "It's the holiday cringe compilation reel, and your family just had to bring up that story. Select a song that perfectly captures your desire to just vanish",
+            "Imagine being a kid and it's X-mas and the tree is up and suddenly a big fucking space ship lands in your house and the aliens abduct your parents",
+            "That moment you realize there's only one gift left under the tree, and it's clearly not yours. Choose the tune that sums up that heartbreaking realization",
+            "Your parents start that embarrassing dance they always do after a few eggnogs, and there's no stopping them now. Pick the song that captures their “moves.”",
+            "It's the family's annual “let's all play instruments and sing carols” moment, and you're dreading it. What song reflects your inner struggle to stay cheerful?",
+            "Grandpa nods off mid-sentence, mid-toast, and no one knows what to do. Give us a song that could fill this awkward pause",
+            "Mom's insisted on her special holiday fruitcake, and you've been handed the first slice. Choose a tune that captures the bravery required to take a bite",
+            "The gift exchange has started, and you're praying you don't get another pair of socks. Select the song that represents your silent hope",
+            "Christmas Day cleanup duty has fallen on you, and the pile of dishes looks endless. Give us the song that will help you power through.",
+            "Your cousins want a TikTok dance session in the living room, and they're dragging you into it. Pick a tune to set the vibe (or your resistance)",
+            "Your relatives start talking about politics at the dinner table, and it's not going well. What's the song that sums up the growing tension?",
+            "The power cuts out, the candles are lit, and suddenly it feels like Christmas 1885. Give us the perfect song to match this throwback ambiance",
+            "The toddler found the leftover wrapping paper and is swinging it around like a sword. What's the perfect song for this mini battle scene?",
+            "You've been volunteered to wear the Santa suit for the kids, and honestly, it feels a bit ridiculous. What tune captures your awkward holiday cheer?",
+            "The yearly ugly sweater contest is in full swing, and Aunt Linda's sweater lights up like a Christmas tree. Choose a song that fits her bold style",
+            "The turkey's still in the oven, and everyone's getting hungry and impatient. What song sums up the “where's the food?” energy in the room?",
+            "Grandma's telling that same story about her first Christmas again, and everyone's politely listening. Pick a song that matches your silent amusement",
+            "You spot mistletoe hanging above, and suddenly it's awkward with the person standing next to you. What's the soundtrack to this moment?",
+            "Your younger sibling wants to show everyone the Christmas play they made, and it's…unique. What song captures the bravery of this performance?",
+            "The annual family board game is about to start, and you're determined to win this year. Pick the perfect song to get you in the zone for victory",
+            "Your cousins are outside building a snowman, and it's turning into a serious competition. What tune would fit the “snow sculptor” showdown?",
+            "It's been a long day, everyone's worn out, but your little cousin still wants to play. What song sums up the family's collective exhaustion?"
+        ];
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const randomizedPrizes = shuffleArray(prizes);
+        //console.log(randomizedPrizes);
+        localStorage.setItem('wheelResults', JSON.stringify(randomizedPrizes));
+    </script>
+</body>
+</html>
