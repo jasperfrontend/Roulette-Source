@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Wheel</title>
+</head>
+<body>
+    <h1 style="color: #fff;">Hello chat, I am just here to refresh the wheel. Ignore me!</h1>
+    <script>
+        const prizes = [
+            "An unexpected collab or duet",
+            "This song was THE JAM at your school disco or prom",
+            "Sport-themed song or video",
+            "A song to blast on your birthday",
+            "A song to vibe to when cooking",
+            "That time the cover was just as good or better than the original",
+            "An awesome song in a language you don't understand",
+            "This song is legen... wait for it.. dary!",
+            "It's so bad it's good",
+            "A song that instantly cheers you up",
+            "Instrumental (no singing)",
+            "One of your favourite genres in one song",
+            "Makes you wanna dance like nobody's watching",
+            "Who's cutting onions in here? (song that makes you cry or gives you the feels)",
+            "Song that helps you run faster when you're late for the bus in the morning",
+            "You're up way past your bedtime and find yourself on the wrong side of Youtube (again)",
+            "2:30 AM club vibes",
+            "A song that Jasper would like or needs to hear",
+            "Mom or dad used to blast this when you were growing up",
+            "Ska or reggae",
+            "Random tune from your playlist that everyone needs to hear RIGHT NOW",
+            "Song that was featured on Eurovision",
+            "Your friends drag you to karaoke and you pick out this song from the catalogue",
+            "The one where the video doesn't really match the song",
+            "All-girl band (no Spice Girls)",
+            "Guilty pleasure song",
+            "This would be your walkout song if you were an UFC fighter",
+            "Slow-dancing with your crush kinda vibes",
+            "Song from a movie or TV show that lives rent-free in your head",
+            "First song to blast after midnight on New Year's Eve",
+            "Christmas song that you low-key might listen to even when it's not December",
+            "Movie star who actually sings well",
+            "Weather songs (no 'It's Raining Men'!)",
+            "Meme or famous from the internet",
+            "Animals, but not dogs",
+            "The 60s or earlier",
+            "Song about or mentioning a colour",
+            "Obscure 80s or 90s tune",
+            "Fruit, veg or food song (no Harry Styles)",
+            "Beach bar vibes",
+            "Heavy, angry and/or scary",
+            "Your grandkid asks you what the 2020s were like and you play them this song",
+            "Some guy brought a guitar to your housewarming party and is now singing this song (no Wonderwall)",
+            "First song to listen to on your first day of vacation",
+            "After-ski or winter vibes (no Christmas songs)",
+            "Song to relax to while soaking in the bath after a looong day",
+            "Your family reads your will and it states to play this song at your funeral",
+            "Song from a video game",
+            "Your mom busts into your room yelling at you for blasting this song way too loud (again)",
+            "One hit wonder that isn't annoying"
+        ];
+
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const randomizedPrizes = shuffleArray(prizes);
+        //console.log(randomizedPrizes);
+        localStorage.setItem('wheelResults', JSON.stringify(randomizedPrizes));
+    </script>
+</body>
+</html>

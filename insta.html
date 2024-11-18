@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refresh Wheel</title>
+</head>
+<body>
+    <h1 style="color: #fff;">Hello chat, I am just here to refresh the wheel. Ignore me!</h1>
+    <script>
+        const prizes = [
+        "This song gives me inside sparkles every time I hear it",
+        "A good chillin' in bed banger",
+        "Saw them in concert - loved it",
+        "Absolutely amazing front man",
+        "1950s diner vibes. Sips milkshake",
+        "I wish I could sing this song",
+        "Soooooo suave",
+        "This video needs to go to horny jail",
+        "Getting ready for a date, you put this on to get in the mood",
+        "This song's lyrics are absolute filth",
+        "I secretly loved this song when I was a teenager",
+        "Two hit wonder",
+        "This song is just absolutely bananas",
+        "If cats had nightclubs you'd walk in and this would be playing",
+        "You're pensive and staring into the distance, this is playing in the background",
+        "You illegally acquired this one back in the day",
+        "A food-related song",
+        "I want to know what love is and I want you to show me rn player 1 and player 2",
+        "This song reminds me of a trip I went on",
+        "If red bull did drugs it would sound like this",
+        "If a sleeping kitten could choose a song",
+        "An artistic masterpiece",
+        "Groovy, baby",
+        "Funky af",
+        "Take that bass line for a walk",
+        "If your fridge could play music when you opened it, you would set it to this",
+        "A song with numbers in the title",
+        "Let's find a new sexy Eastern European music wife for Jasper",
+        "OMG it's Christmas",
+        "Obligatory hardcore round so I don't get lynched",
+        "Sexy, sexy, sexy man",
+        "This one hits different",
+        "Watched this song on Winamp visualizer more than once",
+        "This song makes me smile every time",
+        "This song reminds me of an old friend",
+        "A song from one of the first albums I ever bought",
+        "AI wishes it could have soul like this",
+        "You grew up hearing this song often",
+        "A TV theme tune that you've never forgotten",
+        "Just loaded up the mp3 player with some new tracks I got off Napster. Check this one out gang.",
+        "If Soul Train was around today, I'd dance down that catwalk to this",
+        "Why God Whyge !gif crying on the beach",
+        "My secret pop star crush, shhhh",
+        "I would. I just would.",
+        "Fashion icon.",
+        "This video is the ABSOLUTE TITS.",
+        "Cover your eyes, children!",
+        "The harmony in this song is something else",
+        "This is my power ballad",
+        "A newish song",
+        "You just got a brand new car. You turn on the stereo as you pull out of the lot just as this song starts...",
+        "If this band announced a reunion tour I would be absolutely SHOOKETH and I would 100% go",
+        "Bitch, YES.",
+        "Men have feelings too, ok. This song is one of them.",
+        "WE ARE ALIVE LETS FUCKING LFG",
+        "This song inspires me to be better",
+        "I'm in my soft girl era. Listen to this song, hear me purr.",
+        "A small band from your country that you think should be more famous",
+        "My friend is a musician, this is their video",
+        "Player one name a category for Player 2. Player 2 name a category for Player 1. No respins.",
+        "I invited my crush over for dinner. This song is for sure on the playlist.",
+        "I heard this song in a movie when I was growing up and never forgot it",
+        "This video is giving such silvery sparkly vibes",
+        "This song is so romantic it could draw tears from a stone",
+        "I'm happy being single until I hear this song, then I'm sadge",
+        "My current favorite on-stage performance video",
+        "Cooking for my lover on a Saturday morning and this comes on the radio and life just got even sweeter",
+        "Ok, Latina vibes let's go!",
+        "Ok chat, let's just chill and listen to this masterpiece for a minute",
+        "I am still listening to this band all these years later",
+        "This is one of my most played songs in my whole life ever",
+        "Something from a country you've visited",
+        "It was acceptable in the 80s. It was acceptable at the time.",
+        "The elves in Santa's workshop listen to this banger in their last late shift before Santa has to leave on the sleigh",
+        "Wouldn't mind getting my bells jingled while listening to this"
+        ];
+
+
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const randomizedPrizes = shuffleArray(prizes);
+        //console.log(randomizedPrizes);
+        localStorage.setItem('wheelResults', JSON.stringify(randomizedPrizes));
+    </script>
+</body>
+</html>
